@@ -26,6 +26,9 @@ public class tipovar {
             char genero2 = 'F';
             var genero = 'M';
             
+            
+            var apellido = "Miranda";
+            
             System.out.println(edad + " " + edad2);
             System.out.println(precio + " " + precio2);
             System.out.println(nombre + " " + nombre2);
@@ -34,6 +37,9 @@ public class tipovar {
             
             edad2 = 25;
             System.out.println(edad2);
+            
+            
+            System.out.println(nombre + " " + apellido);
                     
             
     }
