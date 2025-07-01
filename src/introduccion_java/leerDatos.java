@@ -5,6 +5,7 @@
 package introduccion_java;
 
 import java.util.Scanner;
+import java.util.Random;
 
 /**
  *
@@ -19,6 +20,9 @@ public class leerDatos {
          var edad =  scanner.nextInt();
          System.out.println("Introduce tu altura");
          var altura =  scanner.nextDouble();
+         
+         
+         
          
          System.out.println("El nombre introducido es: " + nombre);
          System.out.println("Tu edad es: " + edad);
@@ -51,5 +55,10 @@ public class leerDatos {
          System.out.println("edad es: " + edadEmpleado);
          System.out.printf("salario es: $%.2f%n",salarioEmpleado);
          System.out.println("Es jefe: " + nombreEmpleado);
+         
+         
+         
+         
+         
     }
 }
