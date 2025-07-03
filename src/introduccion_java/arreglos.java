@@ -13,7 +13,7 @@ public class arreglos {
          int[] arreglos= new int[3];
          var numeros = new int[9];
          int[] arreglos2= {1,2,3,4,5,6,7,8,9};
-         var numeros = new int[9];
+         var numeros2 = new int[9];
          
          arreglos[0] = 2;
          arreglos[1] = 4;
