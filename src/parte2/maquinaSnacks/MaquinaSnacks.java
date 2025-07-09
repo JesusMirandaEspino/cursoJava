@@ -73,6 +73,12 @@ public class MaquinaSnacks {
         switch(opcion){
             
             case 1 -> comprarSnack(consola, productos);
+            case 2 -> mostrarTicket(productos);
+            case 3 -> agregarSnacks(consola);
+            case 4 -> {
+                System.out.println("Regresa Pronto..");
+                salir = true;
+            }
         }
         
         
@@ -102,8 +108,40 @@ public class MaquinaSnacks {
             System.out.println("Snack No encontrado Id: " + idSnack);
         }
         
+    }
+    
+    
+    
+    
+    private static void mostrarTicket(List<Snack> productos){
+        var ticket = "*** Ticket de Venta ***";
+        var total = 0.0;
+        
+        for( var producto:  productos){
+            ticket+= "\n\t-"+ producto.getNombre() + "- $" + producto.getPrecio(); 
+            total += producto.getPrecio();
+        }
+        System.out.println(ticket);
+        System.out.println("\n\t-Total $" + total);
+    
+    }
+    
+    
+    
+    private static void agregarSnacks(Scanner consola){
+        
+        System.out.println("Nombre del Snack:  ");
+        var nombre = consola.nextLine();
+        System.out.println("Precio del Snack:  ");
+        var precio = Double.parseDouble(consola.nextLine());
+        
+        Snacks.agregarSnack(new Snack(nombre, precio));
         
         
+        System.out.println("El snack se ha agreado correctamente... ");
+        
+        
+        Snacks.mostrarSnack();
     }
     
 }
