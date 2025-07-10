@@ -18,6 +18,12 @@
             <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/archivos/CrearArchivos.java</file>
             <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/archivos/LeerArchivo.java</file>
             <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/archivos/leerTodo.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/archivos/AgregarContenidoArchivo.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/Snacks_Archivos/dominio/Snack.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/Snacks_Archivos/presentacion/MaquinaSnacks.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/Snacks_Archivos/servicio/ServicioSnackLists.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/Snacks_Archivos/servicio/IServicesSnacks.java</file>
+            <file>file:/E:/PAGINASDISEÑOWEB/java/introduccion_java/src/parte2/maquinaSnacks/Snacks_Archivos/servicio/ServicioSnacksArchivo.java</file>
         </group>
     </open-files>
 </project-private>
