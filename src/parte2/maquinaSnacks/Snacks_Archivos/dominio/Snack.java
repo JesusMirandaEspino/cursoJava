@@ -60,6 +60,11 @@ public class Snack implements Serializable {
                 ", precio=" + precio +
                 '}';
     }
+    
+    
+    public String escribirSnack(){
+        return idSnack + "," + nombre + "," + precio;
+    }
 
     @Override
     public int hashCode() {

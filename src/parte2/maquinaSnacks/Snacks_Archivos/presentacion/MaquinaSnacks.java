@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 import parte2.maquinaSnacks.Snacks_Archivos.dominio.Snack;
-import parte2.maquinaSnacks.Snacks_Archivos.servicio.ServicioSnackLists;
+import parte2.maquinaSnacks.Snacks_Archivos.servicio.ServicioSnacksArchivo;
 import parte2.maquinaSnacks.Snacks_Archivos.servicio.IServicesSnacks;
 
 /**
@@ -28,7 +28,9 @@ public class MaquinaSnacks {
         var salir = false;
         var consola = new Scanner(System.in);
         
-        IServicesSnacks servicioSnacks = new ServicioSnackLists();
+        //IServicesSnacks servicioSnacks = new ServicioSnackLists();
+        IServicesSnacks servicioSnacks = new ServicioSnacksArchivo();
+        
         
         List<Snack> productos = new ArrayList();
         System.out.println("*** Maquina de Snacks ***");
@@ -63,7 +65,8 @@ public class MaquinaSnacks {
                            1.- Comprar.
                            2.- Mostrar ticket.
                            3.- Agregar Nuevo Snack.
-                           4.- Salir.
+                           4.- Snacks Disponibles.
+                           5.- Salir.
                            
                            
                            Elige una Opcion: \s""");
@@ -82,7 +85,8 @@ public class MaquinaSnacks {
             case 1 -> comprarSnack(consola, productos, servicioSnacks);
             case 2 -> mostrarTicket(productos);
             case 3 -> agregarSnacks(consola, servicioSnacks);
-            case 4 -> {
+            case 4 -> listaInventariosSnacks(consola, servicioSnacks);
+            case 5 -> {
                 System.out.println("Regresa Pronto..");
                 salir = true;
             }
@@ -91,6 +95,12 @@ public class MaquinaSnacks {
         
         return salir;
         
+        
+    }
+    
+    
+    private static void listaInventariosSnacks(Scanner consola, IServicesSnacks servicioSnacks){
+        servicioSnacks.mostrarSnack();
         
     }
     

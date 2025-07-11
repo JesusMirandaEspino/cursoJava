@@ -1,0 +1,4 @@
+1,Papas,70.0
+2,Soda,50.0
+3,Sandwich,120.0
+4,Jugo de Uva,80.0
